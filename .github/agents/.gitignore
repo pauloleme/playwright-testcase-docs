@@ -1,0 +1,3 @@
+# Ignore all agent customization files and folders
+**/.github/agents/
+**/.github/agents/*

@@ -1,0 +1,3 @@
+End-to-end test automation with Playwright for the saucedemo.com website, including detailed test case documentation.
+
+This repository runs and documents login scenarios, covering different user profiles, invalid attempts, and error messages—promoting quality and traceability for QA and development teams.
