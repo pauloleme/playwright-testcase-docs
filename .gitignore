@@ -8,3 +8,7 @@ node_modules/
 /playwright/.auth/
 /.github/agents/
 /.github/agents/
+/.github/instructions/
+/.github/prompts/
+/.github/skills/
+/.github/workflows/
