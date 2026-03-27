@@ -2,26 +2,26 @@
 
 ---
 
-| **ID**   | **Cenário**                              | **Usuário**              | **Senha**      | **Resultado Esperado**                                                        |
-|:--------:|:------------------------------------------|:-------------------------|:--------------|:-------------------------------------------------------------------------------|
-| TC-001   | Login válido – Standard User              | `standard_user`          | `secret_sauce`| Login realizado com sucesso, redireciona para `/inventory`                     |
-| TC-002   | Login válido – Problem User               | `problem_user`           | `secret_sauce`| Login realizado com sucesso, redireciona para `/inventory`                     |
-| TC-003   | Login válido – Performance Glitch User    | `performance_glitch_user`| `secret_sauce`| Login realizado com sucesso, redireciona para `/inventory`                     |
-| TC-004   | Login válido – Error User                 | `error_user`             | `secret_sauce`| Login realizado com sucesso, redireciona para `/inventory`                     |
-| TC-005   | Login válido – Visual User                | `visual_user`            | `secret_sauce`| Login realizado com sucesso, redireciona para `/inventory`                     |
-| TC-006   | Login bloqueado – Locked Out User         | `locked_out_user`        | `secret_sauce`| Exibe mensagem: **Sorry, this user has been locked out.**                      |
-| TC-007   | Login inválido – Usuário inexistente      | `usuario_inexistente`    | `secret_sauce`| Exibe mensagem: **Username and password do not match any user in this service** |
-| TC-008   | Login inválido – Senha errada             | `standard_user`          | `senha_errada`| Exibe mensagem: **Username and password do not match any user in this service** |
+| **ID**   | **Scenario**                          | **Username**              | **Password**      | **Expected Result**                                                        |
+|:--------:|:--------------------------------------|:-------------------------|:-----------------|:----------------------------------------------------------------------------|
+| TC-001   | Valid login – Standard User           | `standard_user`          | `secret_sauce`   | Login successful, redirects to `/inventory`                                 |
+| TC-002   | Valid login – Problem User            | `problem_user`           | `secret_sauce`   | Login successful, redirects to `/inventory`                                 |
+| TC-003   | Valid login – Performance Glitch User | `performance_glitch_user`| `secret_sauce`   | Login successful, redirects to `/inventory`                                 |
+| TC-004   | Valid login – Error User              | `error_user`             | `secret_sauce`   | Login successful, redirects to `/inventory`                                 |
+| TC-005   | Valid login – Visual User             | `visual_user`            | `secret_sauce`   | Login successful, redirects to `/inventory`                                 |
+| TC-006   | Blocked login – Locked Out User       | `locked_out_user`        | `secret_sauce`   | Shows message: **Sorry, this user has been locked out.**                    |
+| TC-007   | Invalid login – Nonexistent User      | `usuario_inexistente`    | `secret_sauce`   | Shows message: **Username and password do not match any user in this service** |
+| TC-008   | Invalid login – Wrong Password        | `standard_user`          | `senha_errada`   | Shows message: **Username and password do not match any user in this service** |
 
 ---
 
-## 📝 Observações
+## 📝 Notes
 
-- Todos os testes acessam: [https://www.saucedemo.com/](https://www.saucedemo.com/)
-- O campo de senha correto para todos os usuários válidos é sempre `secret_sauce`.
-- O usuário `locked_out_user` deve exibir mensagem de bloqueio.
-- Usuários inválidos ou senha incorreta devem exibir mensagem de erro padrão.
+- All tests access: [https://www.saucedemo.com/](https://www.saucedemo.com/)
+- The correct password for all valid users is always `secret_sauce`.
+- The user `locked_out_user` should display a blocked message.
+- Invalid users or wrong passwords should display the standard error message.
 
 ---
 
-> Este arquivo cobre todos os cenários de login automatizados presentes no projeto.
+> This file covers all automated login scenarios present in the project.

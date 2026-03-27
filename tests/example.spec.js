@@ -63,4 +63,3 @@ for (const username of validUsers) {
     }
   });
 }
-

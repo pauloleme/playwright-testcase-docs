@@ -6,9 +6,4 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
-/.github/agents/
-/.github/agents/
-/.github/instructions/
-/.github/prompts/
-/.github/skills/
-/.github/workflows/
+/.github/
